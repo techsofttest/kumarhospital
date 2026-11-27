@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import { LayoutProvider } from "@/context/LayoutContext";
 import "./globals.css";
 
+export const dynamic = "force-dynamic";
 const headingFont = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
