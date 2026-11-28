@@ -299,7 +299,7 @@ export function Footer() {
               {stroke.map((service,idx) => (
                 <li key={idx}>
                   <a
-                    href={`service/${service.slug}`}
+                    href={service.slug}
                     className="hover:text-white !underline [text-decoration:underline] underline-offset-4 decoration-1 decoration-white/25 hover:decoration-white transition-colors block"
                   >
                     {service.title}
@@ -318,7 +318,7 @@ export function Footer() {
               {neck.map((service,idx) => (
                 <li key={idx}>
                   <a
-                    href={`service/${service.slug}`}
+                    href={service.slug}
                     className="hover:text-white !underline [text-decoration:underline] underline-offset-4 decoration-1 decoration-white/25 hover:decoration-white transition-colors block"
                   >
                     {service.title}

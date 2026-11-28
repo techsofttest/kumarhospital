@@ -22,6 +22,10 @@ interface TreatmentOverviewProps {
 }
 
 export function TreatmentOverview({ treatment ,hero}: TreatmentOverviewProps) {
+    const youtubeMatch = hero.content?.match(
+  /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/
+);
+const youtubeId = youtubeMatch?.[1];
   return (
     <div className="space-y-12">
 
@@ -30,9 +34,22 @@ export function TreatmentOverview({ treatment ,hero}: TreatmentOverviewProps) {
         {/* <h2 className="text-2xl font-semibold font-[family-name:var(--font-heading)] text-[#061627] tracking-tight mb-4">
           Clinical Overview & Methodology
         </h2> */}
-        <div className="[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:font-[family-name:var(--font-heading)] [&_h2]:text-[#061627] [&_h2]:tracking-tight [&_h2]:mb-4 [&_p]:space-y-3.5 [&_p]:text-sm sm:[&_p]:text-base [&_p]:text-gray-700 [&_p]:leading-relaxed" dangerouslySetInnerHTML={{__html:hero.content??""}} />
+        <div className="[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:font-[family-name:var(--font-heading)] [&_h2]:text-[#061627] [&_h2]:tracking-tight [&_h2]:mb-4 [&_p]:space-y-3.5 [&_p]:text-sm sm:[&_p]:text-base [&_p]:text-gray-700 [&_p]:leading-relaxed [&_ul]:mt-6 [&_ul]:space-y-2.5 [&_ul_li]:flex [&_li]:items-start [&_li]:gap-3 [&_li]:text-sm [&_li]:text-[#061627]
+                  [&_li]:flex [&_li]:items-start [&_li]:gap-3 [&_li]:text-sm [&_li]:text-[#061627] [&_li]:before:content-['✓'] [&_li]:before:flex [&_li]:before:items-center [&_li]:before:justify-center [&_li]:before:mt-0.5 [&_li]:before:h-[18px] [&_li]:before:w-[18px] [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-[#CD9E57]/15 [&_li]:before:text-[#CD9E57] [&_li]:before:text-[10px] [&_li]:before:font-bold" dangerouslySetInnerHTML={{__html:hero.content??""}} />
       </div>
-
+      {youtubeId && (
+  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
+    <div className="relative aspect-video w-full">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
+        title={`${hero.title} video`}
+        className="absolute inset-0 h-full w-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+)}
       {/* Featured Visual */}
       <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gray-100 border border-gray-200">
         <Image
