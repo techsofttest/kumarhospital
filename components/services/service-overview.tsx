@@ -38,7 +38,17 @@ const youtubeId = youtubeMatch?.[1];
           Clinical Overview & Methodology
         </h2> */}
         <div className="[&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:font-[family-name:var(--font-heading)] [&_h2]:text-[#061627] [&_h2]:tracking-tight [&_h2]:mb-4 [&_p]:space-y-3.5 [&_p]:text-sm sm:[&_p]:text-base [&_p]:text-gray-700 [&_p]:leading-relaxed [&_ul]:mt-6 [&_ul]:space-y-2.5 [&_ul_li]:flex [&_li]:items-start [&_li]:gap-3 [&_li]:text-sm [&_li]:text-[#061627]
-         [&_li]:flex [&_li]:items-start [&_li]:gap-3 [&_li]:text-sm [&_li]:text-[#061627] [&_li]:before:content-['✓'] [&_li]:before:flex [&_li]:before:items-center [&_li]:before:justify-center [&_li]:before:mt-0.5 [&_li]:before:h-[18px] [&_li]:before:w-[18px] [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-[#CD9E57]/15 [&_li]:before:text-[#CD9E57] [&_li]:before:text-[10px] [&_li]:before:font-bold" dangerouslySetInnerHTML={{__html:hero.content??""}} />
+                                 [&_ol]:my-6 [&_ol]:list-decimal [&_ol]:pl-6
+                [&_ol]:space-y-3
+                [&_ol>li]:pl-2 [&_ol>li]:text-base [&_ol>li]:leading-relaxed
+                [&_ol>li]:text-[#3d3a34] sm:[&_ol>li]:text-lg
+                [&_ol>li::marker]:font-semibold [&_ol>li::marker]:text-[#a43a32] [&_li]:flex [&_li]:items-start [&_li]:gap-3 [&_li]:text-sm [&_li]:text-[#061627] [&_li]:before:content-['✓'] [&_li]:before:flex [&_li]:before:items-center [&_li]:before:justify-center [&_li]:before:mt-0.5 [&_li]:before:h-[18px] [&_li]:before:w-[18px] [&_li]:before:shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-[#CD9E57]/15 [&_li]:before:text-[#CD9E57] [&_li]:before:text-[10px] [&_li]:before:font-bold [&_hr]:my-8 [&_hr]:border-[#171715]/15
+                [&_figure]:my-8 [&_figure]:overflow-hidden
+                [&_figure]:bg-[#e9e3d7]
+                [&>a]:text-[#a43a32] [&>a]:underline [&>a]:underline-offset-4
+                [&_figure_img]:h-auto [&_figure_img]:w-full
+                [&_figure_img]:object-cover
+                " dangerouslySetInnerHTML={{__html:hero.content??""}} />
       </div>
       {youtubeId && (
   <div className="overflow-hidden rounded-2xl border border-gray-200 bg-black shadow-sm">
