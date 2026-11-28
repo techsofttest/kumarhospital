@@ -46,7 +46,7 @@ export function ServiceOverview({ service ,hero}: ServiceOverviewProps) {
         />
       </div>
 
-      {/* Key Clinical Modalities */}
+        {service.clinicalHighlights &&(
       <div className="rounded-2xl bg-[#F4F5F7] border border-gray-200 p-6 sm:p-8">
         <h3 className="text-lg font-semibold font-[family-name:var(--font-heading)] text-[#061627] tracking-tight mb-4">
           Clinical Modalities & Technology
@@ -64,7 +64,7 @@ export function ServiceOverview({ service ,hero}: ServiceOverviewProps) {
             </div>
           ))}
         </div>
-      </div>
+      </div>)}
 
       {/* Step-by-Step Clinical Protocol Pathway */}
       {service.protocolSteps && (<div>

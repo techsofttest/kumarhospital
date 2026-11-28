@@ -63,7 +63,7 @@ export function NeuroRehab({stroke}:{stroke:any}) {
                 distance={18}
                 delay={idx * 60}
                 className="flex items-center gap-3 rounded-xl bg-gray-50 border border-gray-100 p-4"
-              > <div className="text-[#CD9E57] [&>svg]:h-10 [&>svg]:w-10 [&>svg]:[stroke-width:1.6]" dangerouslySetInnerHTML={{__html:icon}} />
+              > <div className="text-[#CD9E57] [&>svg]:h-5 [&>svg]:w-5 [&>svg]:[stroke-width:1.6]" dangerouslySetInnerHTML={{__html:icon}} />
                 <span className="text-[14px] font-medium text-[#061627]">{title}</span>
               </ScrollReveal>
             ))}
