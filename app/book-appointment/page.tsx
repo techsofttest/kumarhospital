@@ -56,9 +56,9 @@ export default async  function  BookAppointmentPage() {
       <Header />
 
       <PageHero
-        label={ data?.hero.title ||"Clinical Scheduling"}
-        title={ data?.hero.content||"Book an Appointment with Our Specialists"}
-        backgroundImage={data?.hero.image||"/page-hero/b5.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <AppointmentBookingForm />

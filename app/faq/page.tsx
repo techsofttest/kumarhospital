@@ -63,9 +63,9 @@ export default async function FaqPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Questions & Answers"}
-        title={data?.hero.sub||"Everything you need to know about our care."}
-        backgroundImage={data?.hero.image|| ""}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <FaqSection faq={data?.faq??[]} info={data?.hero.content} />

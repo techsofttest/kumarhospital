@@ -94,8 +94,8 @@ export default async  function AboutPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"About Kumar Hospital"}
-        title={data?.hero.sub||"Restoring movement, independence and quality of life."}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
         backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 

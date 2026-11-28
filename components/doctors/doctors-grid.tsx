@@ -4,7 +4,6 @@ import { Clock3, Calendar, ArrowRight, Award } from "lucide-react";
 import { SectionLabel } from "@/components/ui/section-label";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { Button } from "@/components/ui/button";
-import { doctors } from "@/components/home/doctors";
 
 export function DoctorsGrid({doctor}:{doctor:any[]}) {
   return (

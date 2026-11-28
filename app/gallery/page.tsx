@@ -63,9 +63,9 @@ export default async function GalleryPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Hospital Gallery"}
-        title={data?.hero.sub||"Explore our campus, suites and clinical technology."}
-        backgroundImage={data?.hero.image||"/page-hero/b7.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <GalleryGrid gallery={data?.gallery??[]}/>

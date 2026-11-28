@@ -65,9 +65,9 @@ export default async function TreatmentsPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Clinical Treatments"}
-        title={data?.hero.sub||"Evidence-backed therapies designed for real, lasting recovery."}
-        backgroundImage={data?.hero.image||"/page-hero/b7.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <TreatmentsNav treatment={data?.treatments ?? []}/>

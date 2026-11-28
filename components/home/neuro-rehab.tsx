@@ -34,7 +34,7 @@ export function NeuroRehab({stroke}:{stroke:any}) {
           <ScrollReveal direction="right" distance={30} duration={700}>
             <div className="relative min-h-[320px] sm:min-h-[380px] lg:min-h-[440px] w-full overflow-hidden rounded-xl bg-gray-200 shadow-sm">
               <Image
-                src="/categories/Neural Pathways in Focus.png"
+                src={stroke.image ||""}
                 alt="Stroke and neurological rehabilitation"
                 fill
                 className="object-cover"

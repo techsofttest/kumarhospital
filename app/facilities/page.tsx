@@ -68,9 +68,9 @@ export default async function FacilitiesPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Infrastructure & Technology"}
-        title={data?.hero.sub||"Purpose-built for accessibility, safety and patient recovery."}
-        backgroundImage={data?.hero.image}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <FacilitiesHighlights stat={data?.stat ?? []}/>

@@ -71,10 +71,9 @@ export default async  function ContactPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title || "Get In Touch"}
-        title={data?.hero.content|| ""}
-        description="Reach out to our clinical care desk in Thammanam, Kochi for outpatient specialist appointments, neuro-rehab admissions, or non-surgical pain inquiries."
-        backgroundImage={data?.hero.image||"/page-hero/b2.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       {/* Main Contact Section */}

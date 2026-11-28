@@ -66,9 +66,9 @@ export default async function TestimonialsPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title|| "Patient Reviews"}
-        title={data?.hero.sub||"Real journeys of perseverance, healing and restored dignity."}
-        backgroundImage={data?.hero.image||"/page-hero/b2.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <TestimonialsRatings />

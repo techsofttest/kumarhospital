@@ -6,11 +6,6 @@ import { AppointmentCta } from "@/components/home/appointment-cta";
 import { DoctorsGrid } from "@/components/doctors/doctors-grid";
 import { DoctorsStandards } from "@/components/doctors/doctors-standards";
 
-// export const metadata = {
-//   title: "Our Doctors & Specialists | Kumar Hospital Kochi",
-//   description:
-//     "Meet our team of physical medicine and rehabilitation consultants, neurologists, and pain specialists at Kumar Hospital Kochi.",
-// };
 
 interface Dataprops{
   seo:{
@@ -80,8 +75,8 @@ export default async  function DoctorsPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Medical Care Team"}
-        title={data?.hero.sub||"Led by dedicated specialists in rehabilitation & pain care."}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
         backgroundImage={data?.hero.image||"/page-hero/b3.png"}
       />
 

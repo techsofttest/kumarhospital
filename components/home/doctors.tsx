@@ -4,61 +4,6 @@ import { Clock3, Calendar, ArrowRight } from "lucide-react";
 import { SectionLabel } from "@/components/ui/section-label";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
-export const doctors = [
-  {
-    prefix: "Dr.",
-    name: "Sasikumar",
-    qualification: "MBBS, DPMR (Physical Medicine & Rehabilitation)",
-    experience: "30+ Years Experience",
-    role: "Physical Medicine & Rehabilitation Specialist",
-    description:
-      "Specialising in physical medicine, musculoskeletal recovery, and personalized rehabilitation protocols.",
-    focus: "Stroke recovery, neurological deficits, spinal injury rehabilitation, post-operative mobility recovery.",
-    time: "08:00 – 13:00 hrs",
-    days: "Mon, Tue, Wed, Fri, Sat",
-    image: "/doctors/DR_ SASIKUMAR.png",
-  },
-  {
-    prefix: "Dr.",
-    name: "Malini Sasikumar",
-    qualification: "MBBS, Specialist Consultant",
-    experience: "25+ Years Experience",
-    role: "Specialist Consultant",
-    description:
-      "Expert consultant combining clinical precision with dedicated patient care for neuro & spine recovery.",
-    focus: "General physical rehabilitation, geriatric mobility care, comprehensive lifestyle & recovery counselling.",
-    time: "08:00 – 13:00 hrs",
-    days: "Mon, Tue, Wed, Fri, Sat",
-    image: "/doctors/DR_MALINI SASIKUMAR.png",
-  },
-  {
-    prefix: "Dr.",
-    name: "Sruthi Sasikumar",
-    qualification: "MBBS, MD (Neurology & Interventional Pain)",
-    experience: "12+ Years Experience",
-    role: "Neurologist & Pain Specialist",
-    description:
-      "Dedicated to advanced stroke recovery, neurological disorders, and interventional pain therapies.",
-    focus: "Acute & chronic neurological management, targeted nerve blocks, regenerative pain therapies, migraine & neuropathy.",
-    time: "08:00 – 13:00 hrs",
-    days: "Mon, Tue, Wed, Fri, Sat",
-    image: "/doctors/DR_SRUTHI SASIKUMAR - Copy.png",
-  },
-  {
-    prefix: "Dr.",
-    name: "Sreenath P R",
-    qualification: "MBBS, DNB (Physical Medicine & Rehabilitation)",
-    experience: "10+ Years Experience",
-    role: "Specialist Consultant",
-    description:
-      "Specialist consultant focused on restorative care, robotic gait analysis, and movement disorders.",
-    focus: "Robotic gait analysis, biomechanical retraining, sports & musculoskeletal rehabilitation.",
-    time: "15:00 – 17:00 hrs",
-    days: "Wednesday & Friday",
-    image: "/doctors/Dr_Sreenath_P_R.png",
-  },
-];
-
 export function Doctors({doctor}:{doctor:any[]}) {
   return (
     <section id="doctors" className="py-20 sm:py-24 bg-white">

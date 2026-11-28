@@ -66,9 +66,9 @@ export default async function ServicesPage() {
       <Header />
 
       <PageHero
-        label={data?.hero.title||"Clinical Specialties"}
-        title={data?.hero.content||"Comprehensive Rehabilitation & Pain Medicine Services"}
-        backgroundImage={data?.hero.image || "/page-hero/b6.png"}
+        label={data?.hero.title||""}
+        title={data?.hero.sub||""}
+        backgroundImage={data?.hero.image||"/page-hero/b1.png"}
       />
 
       <ServicesListing service={data?.service ?? []} />

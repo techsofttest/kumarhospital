@@ -65,7 +65,7 @@ export function BackAndNeckPain({brain}:{brain:any}) {
           <ScrollReveal direction="left" distance={30} duration={700}>
             <div className="relative min-h-[320px] sm:min-h-[380px] lg:min-h-[440px] w-full overflow-hidden rounded-xl bg-gray-200 shadow-sm">
               <Image
-                src="/categories/3d-female-medical-figure-with-neck-back-bones-highlighted.jpg"
+                src={brain.image ||""}
                 alt="Back and neck pain treatment"
                 fill
                 className="object-cover"
